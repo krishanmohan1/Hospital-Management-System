@@ -17,8 +17,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
     origin : `https://hospital-management-system-i9m8.vercel.app/`,
-    credential : true
+    credentials : true
 })); 
+
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: false })); 
 app.use('/api/auth', authRoutes);
