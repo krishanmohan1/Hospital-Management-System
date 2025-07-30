@@ -15,7 +15,10 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors()); 
+app.use(cors({
+    origin : `https://hospital-management-system-1akk.vercel.app`,
+    credential : true
+})); 
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: false })); 
 app.use('/api/auth', authRoutes);
