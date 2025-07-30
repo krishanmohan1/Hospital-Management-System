@@ -16,7 +16,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin : `https://hospital-management-system-1akk.vercel.app`,
+    origin : `https://hospital-management-system-vert-nine.vercel.app/`,
     credential : true
 })); 
 app.use(express.json()); 
